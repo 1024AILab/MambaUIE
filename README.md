@@ -5,7 +5,7 @@
 
 ## MambaUIE: Unraveling the Ocean's Secrets with Only 2.8 FLOPs
 
-### [[Paper](https://arxiv.org/submit/5546331)] 
+### [[Paper](https://arxiv.org/abs/2404.13884)] 
 
 [Zhihao Chen](https://scholar.google.com/citations?user=SBoHvVQAAAAJ&hl=zh-CN), [Yiyuan Ge](https://scholar.google.com/citations?user=qKxpHGcAAAAJ&hl=zh-CN)
 
