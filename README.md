@@ -3,7 +3,7 @@
 </p>
 
 
-## MambaUIE: Unraveling the Ocean's Secrets with Only 2.8 FLOPs
+## MambaUIE: Unraveling the Ocean's Secrets with Only 2.8 GFLOPs
 
 ### [[Paper](https://arxiv.org/abs/2404.13884)] 
 
