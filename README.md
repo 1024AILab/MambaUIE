@@ -1,33 +1,26 @@
 <p align="center">
-    <img src="assets/logo.svg" width="300">
+    <img src="assets/logo.png" width="300">
 </p>
 
 
-## MambaUIE: Unraveling the Ocean's Secrets with Only 2.8 GFLOPs
+
+## WaveUIE: Policy-Driven Contrastive Learning for Underwater Image Enhancement in the Wavelet Domain
 
 ### [[Paper](https://arxiv.org/abs/2404.13884)] 
 
-[Zhihao Chen](https://scholar.google.com/citations?user=SBoHvVQAAAAJ&hl=zh-CN), [Yiyuan Ge](https://scholar.google.com/citations?user=qKxpHGcAAAAJ&hl=zh-CN)
-
-
-### [MambaUIE Preformance on Real World Video](https://www.youtube.com/watch?v=BtInjZjvevQ) 
-
-
-[![MambaUIE](assets/vedio.png)](https://www.youtube.com/watch?v=BtInjZjvevQ)
+[Zhihao Chen](https://scholar.google.com/citations?user=SBoHvVQAAAAJ&hl=zh-CN), [Yiyuan Ge](https://scholar.google.com/citations?user=qKxpHGcAAAAJ&hl=zh-CN), [Ziyang Wang](https://scholar.google.com/citations?user=GWF20_wAAAAJ), [Xin Lin](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=XpMnJ1QAAAAJ), [Lu Yang](https://scholar.google.com/citations?hl=zh-CN&user=V-6H56AAAAAJ)
 
 
 
-> **Abstract:**  Underwater Image Enhancement (UIE) techniques aim to address the problem of underwater image degradation due to light absorption and scattering. In recent years, both Convolution Neural Network (CNN)-based and Transformer-based methods have been widely explored. In addition, combining CNN and Transformer can effectively combine global and local information for enhancement. However, this approach is still affected by the secondary complexity of the Transformer and cannot maximize the performance. Recently, the state-space model (SSM) based architecture Mamba has been proposed, which excels in modeling long distances while maintaining linear complexity. This paper explores the potential of this SSM-based model for UIE from both efficiency and effectiveness perspectives. However, the performance of directly applying Mamba is poor because local fine-grained features, which are crucial for image enhancement, cannot be fully utilized. Specifically, we customize the MambaUIE architecture for efficient UIE. Specifically, we introduce visual state space (VSS) blocks to capture global contextual information at the macro level while mining local information at the micro level. Also, for these two kinds of information, we propose a Dynamic Interaction Block (DIB) and Efficient Feedforward Network (EFFN) for intra-block feature aggregation. MambaUIE is able to efficiently synthesize global and local information and maintains a very small number of parameters with high accuracy. Experiments on UIEB datasets show that our method reduces GFLOPs by 67.4% (2.715G) relative to the SOTA method. To the best of our knowledge, this is the first UIE model constructed based on SSM that breaks the limitation of FLOPs on accuracy in UIE. The official repository of MambaUIE at https://github.com/1024AILab/MambaUIE. 
+
+
+> **Abstract:**  Underwater image enhancement remains challenging in computer vision due to its complex and diverse degradation phenomena. Existing state-of-the-art methods mainly focus on spatial domain modelling and demonstrate superiority, but they fall short in two key aspects: 1) underutilization of frequency domain features, and 2) insufficient exploitation of the relationship between the positive and negative samples during the training. To overcome these limitations, we propose a wavelet-driven framework called WaveUIE. Specifically, our method decomposes images into high/low-frequency components via the wavelet transform. To better mine the features of these two component patterns, a high-frequency enhancement block (HFEBlock) is introduced to restore fine textures of the high-frequency component. In addition, we also introduce a low-frequency enhancement block (LFEBlock) to effectively eliminates color casts and blur of the low-frequency features. Moreover, we design a dynamic frequency fusion block (DFFBlock), which orchestrates cross-frequency interactions by first calibrating high-frequency data with the enhanced low-frequency features, and then synthesising them into coherent visual outputs. Finally, we design a wavelet fine-grained contrastive policy (WFCPolicy) to decompose images into four sub-bands and impose contrastive constraints on the enhanced result (anchor) within the sub-band space. These constraints pull the anchor closer to the ground-truth (positive samples) while pushing it away from the original degraded image (negative samples), thereby explicitly leveraging the degradation features present in different frequency sub-bands to improve enhancement performance. Experimental evaluations demonstrate state-of-the-art performance across multiple benchmarks, with significant improvements in both SSIM and UIQM metrics over existing methods. Project webpage: https://1024ailab.github.io/MUIE/. 
 > 
 
 
 
 <p align="center">
-    <img src="assets/final.svg" style="border-radius: 15px">
-</p>
-
-<p align="center">
-    <img src="assets/blocks.svg" style="border-radius: 15px">
+    <img src="assets/fig11.png" style="border-radius: 15px">
 </p>
 
 
@@ -39,7 +32,7 @@
 
 - [Visual Results](#visual_results)
 
-## <a name="Real-SR"></a>🔍 Visual Results On Real-world Underwater Image
+## <a name="Real-SR"></a>🔍 Visual Results On Underwater Image Enhancement
 
 [<img src="assets/cont1.png" height="250"/>](https://imgsli.com/MjU2OTIz) [<img src="assets/cont2.png" height="250"/>](https://imgsli.com/MjU2OTI0) [<img src="assets/cont3.png" height="250"/>](https://imgsli.com/MjU2OTI1)
 
