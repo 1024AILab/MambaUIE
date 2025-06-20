@@ -6,7 +6,7 @@
 
 ## WaveUIE: Policy-Driven Contrastive Learning for Underwater Image Enhancement in the Wavelet Domain
 
-### [[Paper](https://arxiv.org/abs/2404.13884)] 
+
 
 [Zhihao Chen](https://scholar.google.com/citations?user=SBoHvVQAAAAJ&hl=zh-CN), [Yiyuan Ge](https://scholar.google.com/citations?user=qKxpHGcAAAAJ&hl=zh-CN), [Ziyang Wang](https://scholar.google.com/citations?user=GWF20_wAAAAJ), [Xin Lin](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=XpMnJ1QAAAAJ), [Lu Yang](https://scholar.google.com/citations?hl=zh-CN&user=V-6H56AAAAAJ)
 
